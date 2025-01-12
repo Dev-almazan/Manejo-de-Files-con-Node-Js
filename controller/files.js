@@ -76,7 +76,7 @@ export default class filesManager{
 
     static registerLogs = async (logPath,typeLog, msgLog) => {
         const timestamp = new Date().toISOString();
-        const logMsg = `[${timestamp}] ${typeLog}: ${msgLog}\n`;
+        const logMsg = `[${timestamp}]  ${typeLog}:  ${msgLog}\n`;
 
         try {
             const logExists = await this.verifyLogFile(logPath);
